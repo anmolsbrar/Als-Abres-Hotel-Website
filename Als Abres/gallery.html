@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Als Abres::Gallery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#gallery a').hover(function(){
+		var galleryHref = $(this).attr('href');
+		var galleryAlt = $(this).attr('title');
+		$('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		$('figcaption').html(galleryAlt);
+		});
+});
+</script>
+
+</head>
+<body>
+<div id = "wrapper">
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li class="active"><a href="index.html"><span>Home</span></a></li>
+          <li><a href="stay.html"><span>Stay</span></a></li>
+          <li><a href="gallery.html"><span>Gallery</span></a></li>
+          <li><a href="contact.html"><span>About Us</span></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1><a href="index.html">Als<span> Abres</span> <small>A different feel</small></a></h1>
+      </div>
+      <div class="clr"></div>
+      
+      
+      <div class="clr"></div>
+    </div>
+  </div>
+  <h2 class = "h2_resize"><strong>Image Gallery</strong></h2>
+
+<div class="clr"></div>
+  <div id="gallery">
+  <div id = "gallery_resize">
+   <ul>
+   <li>
+     <a href="gallery/room1.jpg" title="Standard Double"><img src="gallery/room1.jpg" width="100" height="75"  alt="Standard Double"></a>
+   </li>
+   <li>
+     <a href="gallery/room2.jpg" title="Basic Room"><img src="gallery/room2.jpg" width="100" height="75" alt="Basic Room"></a>  
+   </li>
+   <li>
+     <a href="gallery/pool.jpg"  title="Pool on the roof"><img src="gallery/pool.jpg" width="100" height="75" alt="You can find the pool on the roof"></a>
+   </li>
+   <li>
+     <a href="gallery/room3.jpg" title="Washroom"><img src="gallery/room3.jpg" width="100" height="75" alt="Washroom"></a>
+   </li>
+   <li>
+     <a href="gallery/lounge.jpg" title="You can find the lounge on the main floor"><img src="gallery/lounge.jpg" width="100" height="75" alt="You can find the lounge on the main floor"></a>
+  </li>
+  <li>
+    <a href="gallery/meeting.jpg" title="Meeting Room"><img src="gallery/meeting.jpg" width="100" height="75" alt="Meeting Room"></a>
+  </li>
+  <li>
+    <a href="gallery/gym.jpg" title="Full Access Workout Gym"><img src="gallery/gym.jpg" width="100" height="75" alt="Full Access Workout Gym"></a>
+  </li>
+  <li>
+    <a href="gallery/bar.jpg" title="24/7 Bar"><img src="gallery/bar.jpg" width="100" height="75" alt="24/7 Bar"></a>
+  </li>
+  <li>
+    <a href="gallery/sauna.jpg" title="Enjoy the healthy sauna"><img src="gallery/sauna.jpg" width="100" height="75" alt="Enjoy the healthy sauna with friends and family. In fact, sauna is great for your heart"></a>
+  </li>
+   <li>
+    <a href="gallery/hotel.jpg" title="Outside View of the Hotel"><img src="gallery/hotel.jpg" width="100" height="75" alt="Outside View of the Hotel"></a>
+  </li>
+   
+   </div>
+  </div>
+ </ul>
+ <div class="imageBig">
+     <div class = "imgBig_resize">
+         <figure>
+             <img src="gallery/pool.jpg" width="600" height="450" alt="Pool of the roof">
+             <figcaption>Pool of the roof</figcaption>
+         </figure>
+     </div>
+ </div>
+ 
+</div>
+  <div class="footerGal">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; <a href="#">Als Abres</a>. All Rights Reserved</p>
+      <p class="rf">Design by AHH</p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
